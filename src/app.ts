@@ -19,7 +19,7 @@ const MainController = (req: Request, res: Response) => {
 
 app.get('/', MainController);
 
-//Handle any other route and return a 404 error
+//Handle any other route 
 app.use('*', (req: Request, res: Response) => {
   res.status(404).json({
     success: false,
