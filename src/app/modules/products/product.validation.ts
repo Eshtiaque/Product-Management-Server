@@ -54,7 +54,8 @@ const productValidationSchema = z.object({
   inventory: inventoryValidationSchema,
 });
 
-// making the entire product schema optional
+// Here is the schema for update single data validation
+
 const partialProductValidationSchema = productValidationSchema.partial();
 
 export { productValidationSchema, partialProductValidationSchema };
