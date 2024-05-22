@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import { OrderServices } from './order.service';
 import orderValidationSchema from './order.validation';
 
+// create order
+
 const createOrder = async (req: Request, res: Response) => {
   try {
     const { order: orderData } = req.body;
@@ -22,6 +24,8 @@ const createOrder = async (req: Request, res: Response) => {
   }
 };
 
+// get all order
+
 const getAllOrders = async (req: Request, res: Response) => {
   try {
     const { email } = req.query as { email: string };
@@ -41,6 +45,8 @@ const getAllOrders = async (req: Request, res: Response) => {
     });
   }
 };
+
+//get single order
 
 const getSingleOrder = async (req: Request, res: Response) => {
   try {
