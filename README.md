@@ -1,7 +1,5 @@
-## $\colorbox{Yellow}{{\color{black}{Product\ Management\ Server}}}$
 
-
-
+# Product  Management Server
 ##  Introduction
 
 This project is an advanced E-commerce API designed to handle the complexities of modern online shopping platforms. Built with Express.js and TypeScript, this API integrates MongoDB using Mongoose for robust data management. It ensures data integrity and adherence to data schemas through validation using Zod. The API supports comprehensive CRUD operations for both products and orders, providing a solid foundation for any e-commerce application.
