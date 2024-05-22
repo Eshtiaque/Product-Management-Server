@@ -59,7 +59,6 @@ const getSingleOrder = async (req: Request, res: Response) => {
       data: result,
     });
   } catch (err: any) {
-    // If an error occurs, return a 500 status code
     res.status(500).json({
       success: false,
       message: 'Order not found',
