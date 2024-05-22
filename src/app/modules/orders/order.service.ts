@@ -53,6 +53,8 @@ const createOrderIntoDB = async (order: Order) => {
   return result;
 };
 
+//get all order from database
+
 const getAllOrdersFromDB = async (email: string): Promise<Order[] | null> => {
   const $regex = new RegExp(email, 'i');
 
