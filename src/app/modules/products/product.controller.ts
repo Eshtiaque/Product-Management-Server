@@ -118,7 +118,7 @@ const deleteProduct = async (req: Request, res: Response) => {
       throw new Error('Product is not found!');
     }
 
-    const result = await ProductServices.deleteProductFromDB(productId);
+   await ProductServices.deleteProductFromDB(productId);
 
     res.status(200).json({
       success: true,
