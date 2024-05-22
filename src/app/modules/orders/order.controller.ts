@@ -48,7 +48,6 @@ const getSingleOrder = async (req: Request, res: Response) => {
     const result = await OrderServices.getSingleOrderFromDB(orderId);
 
     if (!result) {
-      // If the product is not found, return a 404 status code
       return res
         .status(404)
         .json({ success: false, message: 'Order not found' });
