@@ -2,6 +2,8 @@ import { ProductModel } from '../products/product.model';
 import { Order } from './order.interface';
 import { OrderModel } from './order.model';
 
+// create order
+
 const createOrderIntoDB = async (order: Order) => {
   // find the product
   const product = await ProductModel.findById(order.productId);
