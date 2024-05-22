@@ -1,4 +1,6 @@
-# API Server Application  ( E-commerce )
+## $\colorbox{Yellow}{{\color{black}{Product\ Management\ Server}}}$
+
+
 
 ##  Introduction
 
@@ -46,37 +48,35 @@ Make sure you have the following installed on your machine:
 
 ###  Clone the Repository
 
-``
+```bash
 git clone https://github.com/Eshtiaque/Product-Management-Server.git
-``
+```
 ###  Install Dependencies
-``
+```bash
 npm install  
-``
+```
  <br/> (  if you can't run it then install npm globally)
 
 ###  Configure Environment Variables
 
 Create a .env file in the root of the project and add the following environment variables:
 
-``
+```bash
 PORT=5000 
-``
-<br/>
-``
 DB_URI="setup your Mongo address"
-``
+```
 ###  Compile TypeScript
-``
+```bash
 npm run build
-``
+```
 ###  Start the Application
-``
+```bash
 npm run start:dev
-``
+```
 
 ##  Contact
 
 If you have any questions or need further assistance, please contact est.ahmed111@gmail.com.
+
 
 ---
