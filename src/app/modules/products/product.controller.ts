@@ -8,7 +8,7 @@ import { ZodError } from 'zod';
 
 const createProduct = async (req: Request, res: Response) => {
   try {
-    const { product: productData } = req.body;
+    const  productData  = req.body;
     const parsedProductData = productValidationSchema.parse(productData);
 
     // for send this data we can call service function
@@ -149,7 +149,7 @@ const updateProduct = async (req: Request, res: Response) => {
     if (result) {
       res
         .status(200)
-        .json({ message: 'Product updated successfully!', product: result });
+        .json({success:true, message: 'Product updated successfully!', product: result });
     } else {
       res.status(404).json({ message: 'Product not found' });
     }
